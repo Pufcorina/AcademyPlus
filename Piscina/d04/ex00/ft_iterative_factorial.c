@@ -1,0 +1,36 @@
+//
+// Created by Corina on 26.09.2017.
+//
+
+#include <stdio.h>
+
+int	ft_iterative_factorial(int nb)
+{
+	int i;
+	int f;
+
+	i = 1;
+	f = 1;
+	if (nb == 0)
+		return (1);
+	if (nb >= 1)
+	{
+		while (i <= nb)
+		{
+			f = f * i;
+			i++;
+		}
+		return (f);
+	}
+	else
+		return (0);
+}
+
+int	main(void)
+{
+	int a;
+
+	a = 5;
+	printf("%d", ft_iterative_factorial(a));
+	return (0);
+}
